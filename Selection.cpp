@@ -9,7 +9,28 @@ int comparator(const void* p, const void* q);
 
 int main()
 {
+	//Here is the inorder list
+	int arr[] = { 1,2,4,7,9,15,18,21,24 };
+	int n = sizeof(arr) / sizeof(arr[0]);	
+	SelectionSort(arr, n);
+	cout << "Here the inorder sorted array: \n";
+	printArray(arr, n);
 
+	//Here is the Half order list
+	/*int arr1[] = { 1,3,4,5,6,20,15,12,7 };
+	int m = sizeof(arr1) / sizeof(arr[0]);
+	SelectionSort(arr1, m);
+	cout << "Here is the half sorted list: 1,3,4,5,6,20,15,12,7 " << endl;
+	cout << "Here the Half sorted array: \n";
+	printArray(arr1, m);
+
+	//Here is the reversed list
+	int arr2[] = { 29,24,21,12,6,4,3,2,1 };
+	int o = sizeof(arr2) / sizeof(arr2[0]);
+	SelectionSort(arr2, o);
+	cout << "Here is the reverse list: 29,24,21,12,6,4,3,2,1 " << endl;
+	cout << "Here the Reversed sorted array: \n";
+	printArray(arr2, o);
 	return 0;
 }
 void swap(int* sp, int* tp)
